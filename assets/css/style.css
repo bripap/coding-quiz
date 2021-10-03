@@ -1,0 +1,151 @@
+:root {
+    background-color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    }
+    
+    li {
+        padding-bottom: 3px;
+        color: white;
+        text-shadow: 1.5px 1px 3px black;
+        list-style-type: none;
+    }
+    
+    p {
+        color: black;
+        text-shadow: .5px .5px rgb(0, 0, 0);
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    h2 {
+        margin-top: -150px;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    input
+    {
+        text-align: center;
+    }
+    
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    
+      button {
+        display: inline-block;
+        background-color: #8b0eff;
+        border-radius: 10px;
+        border: 3px solid black;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 200px;
+        margin-top: 3px;
+        box-shadow: 4px 3px 6px #b4b4b4;
+    }
+    
+      button:hover {
+          box-shadow: 4px 3px 6px #000000;
+    }
+    
+    #startpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #timer {
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: right;
+        margin-bottom: 150px;
+        margin-top: -200px;
+    }
+
+    #quiz {
+        display: none;
+    }
+    
+    #result {
+        display: none;
+    }
+    
+    #gameover {
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #highScore {
+        height: 1.5rem;
+        border: groove 2px;
+    }
+    
+    #high-scorePage {
+        display: none;
+        width: 50%;
+        border: solid;
+        border-color: silver;
+        border-bottom-style: groove;
+        padding-bottom: .3rem;
+        background: rgb(205, 205, 206);
+    }
+    
+    #highscore-header {
+        display:flex;
+        justify-content: space-around;
+        border-bottom-style: outset;
+        margin-bottom: 2px;
+        background-color:#8b0eff; 
+        color: #eeeeee;
+
+    }
+
+    #highscoreContainer {
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #initials {
+        margin: .5rem;
+        height: 1.75rem;
+    }
+    
+    #highscore-initials {
+        display: inline-block;
+        padding-left: 9.5rem;
+        font-weight: bold;
+    }
+    
+    #highscore-score {
+        float: right;
+        padding-right: 8.75rem;
+        font-weight: bold;
+    }
+    
+    #finalScore {
+        padding-bottom: 0.5rem;
+        font-size: x-large;
+        font-weight: bold;
+    }
+    
+    #endGameBtns {
+        display: none;
+    }
