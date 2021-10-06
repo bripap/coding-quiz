@@ -4,7 +4,8 @@ Homework-week-04
 
 ## DESCRIPTION OF TASK:
 ```
-Build a timed coding quiz with multiple-choice questions that will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. 
+Build a timed coding quiz with multiple-choice questions that will run in the browser 
+and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. 
 ```
 
 ### User Story
@@ -37,7 +38,7 @@ THEN I can save my initials and my score
 
 The start page of the quiz includes simple directions, a button to start the quiz and a button to view high scores.
 
-![The Coding Quiz application displays Start Quiz and High Score buttons.](.assets/images/start-page.png)
+![The Coding Quiz application displays Start Quiz and High Score buttons.](./assets/images/start-page.png)
 
 The quiz starts. It has four multiple choices and a timer on the top right. There are a total of seven questions.
 
