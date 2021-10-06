@@ -56,3 +56,5 @@ The high score page will keep all scores in the browser until the clear scores b
 
 
 ## LINK TO DEPLOYED APPLICATION:
+
+https://bripap.github.io/coding-quiz/
