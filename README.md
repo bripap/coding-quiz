@@ -35,5 +35,23 @@ THEN I can save my initials and my score
 
 ## SCREENSHOTS:
 
+The start page of the quiz includes simple directions, a button to start the quiz and a button to view high scores.
+
+![The Coding Quiz application displays Start Quiz and High Score buttons.](.assets/images/start-page.png)
+
+The quiz starts. It has four multiple choices and a timer on the top right. There are a total of seven questions.
+
+![The first question of the quiz.](./assets/images/questions-and-timer.png)
+
+Once the quiz has been completed, the player's score will show. The player will be allowed to enter their initials in the box and submit.
+
+![The score and submit initials for high score.](./assets/images/submit-highscore.png)
+
+The high score page will keep all scores in the browser until the clear scores button is clicked.
+
+![The high score page.](./assets/images/highscorepage.png)
+
+
+
 
 ## LINK TO DEPLOYED APPLICATION:
