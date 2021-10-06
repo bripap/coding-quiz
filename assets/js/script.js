@@ -168,6 +168,26 @@ function generateHighscores(){
     }
 }
 
+
+
+
+// This function clears the list for the high scores and generates a new high score list from local storage
+function generateHighscores(){
+    highscoreDisplayName.innerHTML = "";
+    highscoreDisplayScore.innerHTML = "";
+    var highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+    for (i=0; i<highscores.length; i++){
+        var newNameSpan = document.createElement("li");
+        var newScoreSpan = document.createElement("li");
+        newNameSpan.textContent = highscores[i].name;
+        newScoreSpan.textContent = highscores[i].score;
+        highscoreDisplayName.appendChild(newNameSpan);
+        highscoreDisplayScore.appendChild(newScoreSpan);
+    }
+}
+
+
+
 // This function displays the high scores page while hiding all of the other pages from 
 function showHighscore(){
     startQuizDiv.style.display = "none"
@@ -178,6 +198,15 @@ function showHighscore(){
 
     generateHighscores();
 }
+
+
+// This function clears the local storage of the high scores as well as clearing the text from the high score board
+function clearScore(){
+    window.localStorage.clear();
+    highscoreDisplayName.textContent = "";
+    highscoreDisplayScore.textContent = "";
+}
+
 
 // This function sets all the variables back to their original values and shows the home page to enable replay of the quiz
 function replayQuiz(){
@@ -200,7 +229,7 @@ function checkAnswer(answer){
         generateQuizQuestion();
         //display in the results div that the answer is correct.
     } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
-        // alert("That Is Incorrect.")
+        timeLeft -= 5;
         currentQuestionIndex++;
         generateQuizQuestion();
         //display in the results div that the answer is wrong.

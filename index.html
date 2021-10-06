@@ -7,12 +7,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-    <section class="container">
+    <div class="container">
 
         <div id="startpage">
-            <h2>Test your JavaScript Knowledge by answering a series of questions.</h2>
-            <h3>Incorrect answers will result in a penelized score/timer.</h3>
-        <button id="startbtn">Start Quiz</button>
+            <h2>Test your knowledge of Javascript by answering a series of questions.</h2>
+            <h2>Incorrect answers will result in a 5 second penalty in time.</h2>
+        <button id="startbtn">Start Code Quiz</button>
         <button id="startPageHighscore" onclick="showHighscore()">High Scores</button>
         </div>
 
@@ -28,8 +28,8 @@
         <div id="gameover">
 
             <div id="finalScore"></div>
-            <input type="text" size = "40" placeholder="Enter you initials here" name="intials" id="initials"/>
-            <button id="submitScore">Submit High Score</button>
+            <input type="text" size = "40" placeholder="Enter you initials for high score" name="intials" id="initials"/>
+            <button id="submitScore">Submit Score</button>
         </div>
         <div id=highscoreContainer>
         <div id="high-scorePage">
@@ -42,9 +42,10 @@
         </div>
         <div id="endGameBtns">
             <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+            <button id="clearHighscore" onclick="clearScore()">Clear Highscores</button>
         </div>
     </div>
-    </section>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
